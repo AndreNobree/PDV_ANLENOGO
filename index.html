@@ -30,21 +30,21 @@
             <div class="code">
                 <form>
                     <h3>Código do Produto</h3>
-                    <input id="formulario" type="text"></form>
+                    <input id="formulario" type="text" class="CodProd">
                 </form>
             </div>
 
             <div class="nome">
                 <form>
-                    <h3>Nome</h3>
-                    <input id="formulario" type="text"></form>
+                    <h3 id="nome">Nome</h3>
+                    <input id="formulario" type="text" class="Nome" disabled>
                 </form>
             </div>
 
             <div class="quantidade">
                 <form>
                     <h3>Quantidade</h3>
-                    <input id="formulario" type="number"></form>
+                    <input id="formulario" type="number" class="Quant">
                 </form>
             </div>
 
@@ -53,28 +53,41 @@
         <!--------------------------------------------------------------------------------------------------------------------------->
 
         <div class="conteudoPag2">
-            <div class="code">
+            <div class="preco">
                 <form>
                     <h3>Preço Unitário</h3>
-                    <input id="formulario" type="text"></form>
+                    <input id="formulario" type="text" class="PrecoUnit" disabled>
                 </form>
             </div>
 
-            <div class="nome">
+            <div class="total">
                 <form>
-                    <h3>Valor Total</h3>
-                    <input id="formulario" type="text"></form>
+                    <h3 id="nome">Valor Total</h3>
+                    <input id="formulario" type="text" class="Total" disabled>
                 </form>
             </div>
-<!--
-            <div class="quantidade">
+
+            <div class="btn">
                 <form>
-                    <h3>Quantidade</h3>
-                    <input id="formulario" type="text"></form>
+                    <input type="submit"id="btn1" value="Limpar">
+                    <input type="submit" id="btn2" value="Ingressar">
                 </form>
             </div>
--->
+
         </div>
+        
+        <!--------------------------------------------------------------------------------------------------------------------------->
+        <div class="nota">
+            TABELA
+        </div>
+
+        <div class="btn2">
+            <form>
+                <input type="submit"value="Pagar">
+            </form>
+        </div>
+
+        <!--------------------------------------------------------------------------------------------------------------------------->
     </div>
 </body>
 </html>
