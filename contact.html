@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./IMAGENS/logo icon.png" type="image/x-icon">
+    <style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+    </style>
+</head>
+<body class="contact">
+    <div class="formulario-centro">
+        <div>
+            <h2 id="form-contato">Formulário de contato</h2>
+        </div>
+
+        <div class="nome-contato">
+            <form>
+                <label for="formulario-nome"><b>Nome</b> <br>
+                <input id="formulario-nome" type="text" placeholder="insira seu nome" style="text-align: center">
+            </form>
+        </div>
+
+        <div class="email-contato">
+            <form>
+                <label for="formulario-email"><b>E-mail</b> <br>
+                    <input id="formulario-email" type="email" placeholder="insira seu e-mail" style="text-align: center">
+                </label>
+            </form>
+        </div>
+            
+        <div class="assunto-contato">
+            <form>
+                <label for="formulario-assunto"><b>Assunto</b> <br>
+                <input id="formulario-assunto" list="assunto-contato-list" type="text" style="text-align: center"/> 
+                <datalist id="assunto-contato-list">
+                    <option>Reportar Erro</option>
+                    <option>Deixar Sugestão</option>
+                    <option>Elogiar nosso serviço</option>
+                    <option>Outro</option>
+                </datalist> 
+            </form> 
+        </div>   
+    
+        <div class="mensagem-contato">
+            <form>
+                <label for="formulario-mensagem"><b>Mensagem</b> <br>
+                    <textarea id="formulario-mensagem" name="mensagem" maxlength="500" cols="30" rows="10" placeholder="Insira sua mensagem" style="text-align: center" style="font-family:'Poppins', sans-serif";></textarea>
+                    <!-- AJEITAR FONTE DA CAIXA MENSAGEM -->
+                </label>
+            </form>
+        </div>
+        
+        <div class="botao-contato">
+            <input type="submit" id="btn3">
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape-contato-total">
+            <div class="rodape-contato">
+                <div class="titulo-rodape">
+                    <h2 id="tit-rodape">Acompanhe nossas redes sociais:</h2>
+                </div>
+                <div class="andre-contato">
+                    <h3>André</h3>
+                    <a href="https://github.com/AndreNobree" target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/github.png">
+                        <p>Github</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-nobre-b61397140/" target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/logotipo-do-linkedin.png">
+                        <p>Linkedin</p>
+                    </a>
+                    <a href= mailto:"afelipe1405@gmail.com"  target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/email.png">
+                        <p>E-mail</p> 
+                    </a>
+                </div>
+
+                <div class="levi-contato">
+                    <h3>Levi</h3>
+                    <a href="https://github.com/levigtri" target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/github.png">
+                        <p>Github</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/levi-gomes-64684522b/" target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/logotipo-do-linkedin.png">
+                        <p>Linkedin</p>
+                    </a>
+                    <a href= mailto:"levigft@gmail.com"  target="_blank">
+                        <img id="logo-contato" src="./IMAGENS/email.png">
+                        <p>E-mail</p> 
+                    </a>
+                </div>       
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
