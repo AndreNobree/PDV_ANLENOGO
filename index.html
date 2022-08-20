@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>PDV - ANLENOGO</title>
 </head>
 <body>
@@ -26,68 +27,88 @@
             </ol>
         </div>
 
-        <div class="conteudoPag">
-            <div class="code">
-                <form>
-                    <h3>Código do Produto</h3>
-                    <input id="formulario" type="text" class="CodProd">
-                </form>
+        <form id="formPrincipal">
+            <div class="conteudoPag">
+                    <div class="code">
+                            <h3>Código do Produto</h3>
+                            <input id="formulario" type="text" class="CodProd" name="CodProd">
+                    </div>
+
+                    <div class="nome">
+
+                            <h3 id="nome">Nome</h3>
+                            <input id="formulario" type="text" class="Nome" name="Nome" >
+                    
+                    </div>
+
+                    <div class="quantidade">        
+                            <h3 id="qua">Quantidade</h3>
+                            <input id="formulario" type="number" class="Quant" name="Quant">
+                
+                    </div>
+
             </div>
 
-            <div class="nome">
-                <form>
-                    <h3 id="nome">Nome</h3>
-                    <input id="formulario" type="text" class="Nome" disabled>
-                </form>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="conteudoPag2">
+                <div class="preco">
+                   
+                        <h3>Preço Unitário</h3>
+                        <input id="formulario" type="text" class="PrecoUnit" name="PrecoUnit" >
+                  
+                </div>
+
+                <div class="total">
+                  
+                        <h3 id="nome">Valor Total</h3>
+                        <input id="formulario" type="text" class="Total" name="Total" >
+               
+                </div>
+
+                <div class="btn">
+             
+                        <button type="reset" id="btn1">Limpar</button>
+                        
+                        <input type="button" value="Ingressar" id="btn2"/>
+                        <!--<input type="button" value="Ingressar" id="btn2" onclick="ingressar(CodProd.value, Nome.value, Quant.value, PrecoUnit.value, Total.value)"/>-->
+                        <!--<button type="submit" id="btn2" onclick="ingressar(CodProd.value, Nome.value, Quant.value, PrecoUnit.value, Total.value)">Ingressar</button>-->
+                
+                </div>
+
             </div>
-
-            <div class="quantidade">
-                <form>
-                    <h3>Quantidade</h3>
-                    <input id="formulario" type="number" class="Quant">
-                </form>
-            </div>
-
-        </div>
-
-        <!--------------------------------------------------------------------------------------------------------------------------->
-
-        <div class="conteudoPag2">
-            <div class="preco">
-                <form>
-                    <h3>Preço Unitário</h3>
-                    <input id="formulario" type="text" class="PrecoUnit" disabled>
-                </form>
-            </div>
-
-            <div class="total">
-                <form>
-                    <h3 id="nome">Valor Total</h3>
-                    <input id="formulario" type="text" class="Total" disabled>
-                </form>
-            </div>
-
-            <div class="btn">
-                <form>
-                    <input type="submit"id="btn1" value="Limpar">
-                    <input type="submit" id="btn2" value="Ingressar">
-                </form>
-            </div>
-
-        </div>
-        
+        </form>
         <!--------------------------------------------------------------------------------------------------------------------------->
         <div class="nota">
-            TABELA
+            <!-- NÃO MEXER -->
+            <table id="tbPessoas" class="tbl">
+                <thead>
+                    <tr>
+                        <th id="tabela">CÓDIGO</th>
+                        <th id="tabela">NOME</th>
+                        <th id="tabela">QUANTIDADE</th>
+                        <th id="tabela">PREÇO</th>
+                        <th id="tabela">TOTAL</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                   
+                </tbody>
+
+            </table>
         </div>
 
         <div class="btn2">
             <form>
-                <input type="submit"value="Pagar">
+                <input type="submit" value="Pagar" id="btn3">   
+                <input type="button" value="Apagar" id="btn4" onclick="apaga()">
+                <input type="button" value="Cancelar" id="btn5">
             </form>
         </div>
 
         <!--------------------------------------------------------------------------------------------------------------------------->
     </div>
+
 </body>
 </html>

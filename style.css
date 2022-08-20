@@ -43,19 +43,23 @@ body{
     margin-top: 100%;
     text-decoration: none;
 }
+
+
 .conteudoPag{
-    width: 230px;
+    width: 70%;
 	color: white;
 	text-align: left;
-	padding-top: 100px;
+	padding-top: 90px;
 	padding-left: 350px; 
     display: flex;
 }
 .conteudoPag h3{
-   
     font-size: 12px;
     text-align: center;
+
 }
+
+
 #formulario{
     padding: 10px 30px;
     border-radius: 25px;
@@ -66,31 +70,32 @@ body{
 #formulario:focus{  
     border-color: rgb(15, 15, 105);
 }
-.nome{
+
+.total, .Nome{
     margin-left: 50px;
 }
-.total{
-    margin-left: 50px;
-}
-#nome{
-    margin-left: 50px;
-}
-.quantidade{
+.Quant{
     margin-left: 80px;
 }
+
 .conteudoPag2{
-    width: 100%;
+    width: 70%;
 	color: white;
-	text-align: left;
 	padding-top: 10px;
 	padding-left: 350px; 
     display: flex;
 }
 .conteudoPag2 h3{
-    margin-left: 5px;
     font-size: 12px;
     text-align: center;
 }
+#nome{
+    margin-left: 50px;
+}
+#qua{
+    margin-left: 80px;
+}
+
 #btn1{
     width: 100px;
     height: 50px;
@@ -135,10 +140,58 @@ body{
     background-color: #fff;
     text-align: center;
 }
+.btn2{
+    width: 70%;
+}
 .btn2 input{
-    margin-left: 350px;
     width: 100px;
     height: 50px;
     border-radius: 10px;
     margin-top: 8px;
+    transition: 0.6s;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+#btn3{
+    margin-left: 350px;
+    border: 2px solid rgb(16, 138, 53);
+}
+#btn3:hover{
+    width: 120px;
+    color: #fff;
+    background-color: rgb(16, 138, 53);
+    border: 2px solid #f3f3f3;
+}
+#btn4{
+    margin-left: 40px;
+    border: 2px solid rgb(255, 145, 0);
+}
+#btn4:hover{
+    width: 120px;
+    color: #111;
+    background-color: rgb(255, 145, 0);
+    border: 2px solid #f3f3f3;
+}
+#btn5{
+    margin-left: 40px;
+    border: 2px solid rgb(138, 16, 16);
+}
+#btn5:hover{
+    width: 120px;
+    color: #fff;
+    background-color: rgb(138, 16, 16);
+    border: 2px solid #f3f3f3;
+}
+table th{
+    border: 2.5px solid black;
+    color: #03a5a5;
+    background-color: #111;
+}
+table td{
+    border: 1px solid black;
+    width: 200px;
+    cursor: pointer;
+}
+#tabela{
+    width: 200px;
 }
