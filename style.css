@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+.principal{
     background: rgb(43,116,134);
     background: linear-gradient(90deg, rgba(43,116,134,1) 0%, rgba(47,31,186,1) 50%, rgba(43,116,134,1) 100%);
     font-family: 'Poppins', sans-serif;
@@ -33,17 +33,16 @@ body{
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 .menuEsq h3:hover{
-    font-size: 25px;
+    font-size: 20px;
 }
 .menuEsq h6{
     color: rgb(184, 184, 184);
-    margin-top: 100%;
+    margin-top: 60%;
     text-decoration: none;
 }
-
 
 .conteudoPag{
     width: 70%;
@@ -59,9 +58,8 @@ body{
 
 }
 
-
 #formulario{
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 25px;
     border: 2px solid #3498db;
     text-align: center;
@@ -133,7 +131,8 @@ body{
     color: #fff;
 }
 .nota{
-    width: 70%;
+    display: block;
+    width: 900px;
     height: 280px;
     margin-top: 35px;
     margin-left: 350px;
@@ -194,4 +193,140 @@ table td{
 }
 #tabela{
     width: 200px;
+}
+
+
+/* CONTACT */ 
+
+.contact{
+    background: rgb(43,116,134);
+}
+.formulario-centro{
+    display: flex;
+    width: 350px;
+    height: 480px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 57px;
+    background-color: #93c7f1;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 119, 216);
+    transition: 500ms linear;
+}
+#form-contato{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.formulario-centro:hover{
+    transform: scale(1.1);
+}
+#formulario-nome{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: rgb(0, 119, 216);
+}
+#formulario-email{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: rgb(0, 119, 216); 
+}
+#formulario-assunto{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: rgb(0, 119, 216); 
+}
+#formulario-mensagem{
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(0, 119, 216);
+}
+#btcontato{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 40px; 
+    background-color: #f3f3f3;
+    border: 2px solid rgb(0, 119, 216);
+    outline: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#btcontato:hover{
+    background-color: rgb(9, 79, 207);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* SOBRE */
+.sobre{
+    background: rgb(43,116,134);
+    background: linear-gradient(90deg, rgba(43,116,134,1) 0%, rgba(47,31,186,1) 50%, rgba(43,116,134,1) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+.sobreDev{
+    width: 70%;
+	text-align: left;
+	padding-top: 20%;
+    justify-content: center;
+	padding-left: 350px; 
+    display: flex;
+}
+.sobreDev h1{
+    text-align: center;
+    color: white;
+}
+.sobreVer{
+    text-align: center;
+    color: #111;
+    padding-left: 300px; 
+}
+/*FOOTER*/
+
+.rodape-contato-total{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #93c7f1;
+    font-size: 14px;
+    text-align: center;  
+}
+#tit-rodape{
+    margin-left: 300px;
+    font-size: 18px;
+    
+}
+.rodape-contato a, p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.andre-contato{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 60px;
+    margin-left: 330px;
+    position: fixed;    
+}
+.levi-contato{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 790px;
+    position: fixed;
+}
+#logo-contato{
+    width: 20px;
 }

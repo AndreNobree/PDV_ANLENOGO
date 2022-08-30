@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./IMAGENS/logo icon.png" type="image/x-icon">
+    <style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+    </style>
+</head>
+<body class="contact">
+
+    <div class="tituloSup">
+        <img id="img" src="./IMAGENS/logo.png">
+    </div>
+
+    <div class="menuEsq">
+        <ol>
+            <br><br>
+            <h3><a href="./pag.html">PAGAMENTO</a></h3>
+            <br><br>
+            <h3><a href="https://fonts.google.com">ESTOQUE</a></h3>
+            <br><br>
+            <h3><a href="./contact.html">CONTATO Admin</a></h3>
+            <br><br>
+            <h3><a href="./sobre.html">SOBRE</a></h3>
+            <h6>VERSÃO 1.0</h6>            
+        </ol>
+    </div>
+
+
+    <div class="formulario-centro">
+        <div>
+            <h2 id="form-contato">Formulário de contato</h2>
+        </div>
+
+        <div class="nome-contato">
+            <form>
+                <label for="formulario-nome"><b>Nome</b> <br>
+                <input id="formulario-nome" type="text" placeholder="insira seu nome" style="text-align: center">
+            </form>
+        </div>
+
+        <div class="email-contato">
+            <form>
+                <label for="formulario-email"><b>E-mail</b> <br>
+                    <input id="formulario-email" type="email" placeholder="insira seu e-mail" style="text-align: center">
+                </label>
+            </form>
+        </div>
+            
+        <div class="assunto-contato">
+            <form>
+                <label for="formulario-assunto"><b>Assunto</b> <br>
+                <input id="formulario-assunto" list="assunto-contato-list" type="text" placeholder="Ex: Reportar Erro" style="text-align: center"/> 
+                <datalist id="assunto-contato-list">
+                    <option>Reportar Erro</option>
+                    <option>Deixar Sugestão</option>
+                    <option>Elogiar nosso serviço</option>
+                    <option>Outro</option>
+                </datalist> 
+            </form> 
+        </div>   
+    
+        <div class="mensagem-contato">
+            <form>
+                <label for="formulario-mensagem"><b>Mensagem</b> <br>
+                    <textarea id="formulario-mensagem" name="mensagem" maxlength="500" cols="30" rows="10" placeholder="Insira sua mensagem" style="text-align: center" style="font-family:'Poppins', sans-serif";></textarea>
+                    <!-- AJEITAR FONTE DA CAIXA MENSAGEM -->
+                </label>
+            </form>
+        </div>
+        
+        <div class="botao-contato">
+            <input type="submit" id="btcontato">
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+    <div class="principal">
+        <div class="tituloSup">
+            <img id="img" src="./IMAGENS/logo.png">
+        </div>
+
+        <div class="menuEsq">
+            <ol>
+                <br><br>
+                <h3><a href="./index.html">PAGAMENTO</a></h3>
+                <br><br>
+                <h3><a href="https://fonts.google.com">ESTOQUE</a></h3>
+                <br><br>
+                <h3><a href="./contact.html">CONTATO Admin</a></h3>
+                <br><br>
+                <h3><a href="./sobre.html">SOBRE</a></h3>
+                <h6>VERSÃO 13.22</h6>            
+            </ol>
+        </div>
+
+        <form id="formPrincipal">
+            <div class="conteudoPag">
+                    <div class="code">
+                            <h3>Código do Produto</h3>
+                            <input id="formulario" type="text" class="CodProd" name="CodProd">
+                    </div>
+
+                    <div class="nome">
+
+                            <h3 id="nome">Nome</h3>
+                            <input id="formulario" type="text" class="Nome" name="Nome" >
+                    
+                    </div>
+
+                    <div class="quantidade">        
+                            <h3 id="qua">Quantidade</h3>
+                            <input id="formulario" type="number" class="Quant" name="Quant">
+                
+                    </div>
+
+            </div>
+
+         
+
+            <div class="conteudoPag2">
+                <div class="preco">
+                   
+                        <h3>Preço Unitário</h3>
+                        <input id="formulario" type="text" class="PrecoUnit" name="PrecoUnit" >
+                  
+                </div>
+
+                <div class="total">
+                  
+                        <h3 id="nome">Valor Total</h3>
+                        <input id="formulario" type="text" class="Total" name="Total" >
+               
+                </div>
+
+                <div class="btn">
+             
+                        <button type="reset" id="btn1">Limpar</button>
+                        
+                        <input type="button" value="Ingressar" id="btn2"/>
+                
+                </div>
+
+            </div>
+        </form>
+     
+        <div class="nota">
+            
+            <table id="tbPessoas" class="tbl">
+                <thead>
+                    <tr>
+                        <th id="tabela">CÓDIGO</th>
+                        <th id="tabela">NOME</th>
+                        <th id="tabela">QUANTIDADE</th>
+                        <th id="tabela">PREÇO</th>
+                        <th id="tabela">TOTAL</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                   
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="btn2">
+            <form>
+                <input type="submit" value="Pagar" id="btn3">   
+                <input type="button" value="Apagar" id="btn4" onclick="apaga()">
+                <input type="button" value="Cancelar" id="btn5">
+            </form>
+        </div>
+
+      
+    </div>
