@@ -7,84 +7,15 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./IMAGENS/logo icon.png" type="image/x-icon">
-    <style>
-    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
-    </style>
-</head>
-<body class="contact">
+    <script src="./FullScreen.js"></script>
 
-    <div class="tituloSup">
-        <img id="img" src="./IMAGENS/logo.png">
-    </div>
-
-    <div class="menuEsq">
-        <ol>
-            <br><br>
-            <h3><a href="./pag.html">PAGAMENTO</a></h3>
-            <br><br>
-            <h3><a href="https://fonts.google.com">ESTOQUE</a></h3>
-            <br><br>
-            <h3><a href="./contact.html">CONTATO Admin</a></h3>
-            <br><br>
-            <h3><a href="./sobre.html">SOBRE</a></h3>
-            <h6>VERSÃO 1.0</h6>            
-        </ol>
-    </div>
-
-
-    <div class="formulario-centro">
-        <div>
-            <h2 id="form-contato">Formulário de contato</h2>
-        </div>
-
-        <div class="nome-contato">
-            <form>
-                <label for="formulario-nome"><b>Nome</b> <br>
-                <input id="formulario-nome" type="text" placeholder="insira seu nome" style="text-align: center">
-            </form>
-        </div>
-
-        <div class="email-contato">
-            <form>
-                <label for="formulario-email"><b>E-mail</b> <br>
-                    <input id="formulario-email" type="email" placeholder="insira seu e-mail" style="text-align: center">
-                </label>
-            </form>
-        </div>
-            
-        <div class="assunto-contato">
-            <form>
-                <label for="formulario-assunto"><b>Assunto</b> <br>
-                <input id="formulario-assunto" list="assunto-contato-list" type="text" placeholder="Ex: Reportar Erro" style="text-align: center"/> 
-                <datalist id="assunto-contato-list">
-                    <option>Reportar Erro</option>
-                    <option>Deixar Sugestão</option>
-                    <option>Elogiar nosso serviço</option>
-                    <option>Outro</option>
-                </datalist> 
-            </form> 
-        </div>   
-    
-        <div class="mensagem-contato">
-            <form>
-                <label for="formulario-mensagem"><b>Mensagem</b> <br>
-                    <textarea id="formulario-mensagem" name="mensagem" maxlength="500" cols="30" rows="10" placeholder="Insira sua mensagem" style="text-align: center" style="font-family:'Poppins', sans-serif";></textarea>
-                    <!-- AJEITAR FONTE DA CAIXA MENSAGEM -->
-                </label>
-            </form>
-        </div>
-        
-        <div class="botao-contato">
-            <input type="submit" id="btcontato">
-        </div>
-    </div>
-</body>
-</html>
-
-<!--
-    <div class="principal">
+    </head>
+    <body class="contact">
         <div class="tituloSup">
             <img id="img" src="./IMAGENS/logo.png">
+            <p class="img2">Tela Cheia</p><br>
+            <img class="img2" id="img2" src="./IMAGENS/FullScreen.png" onclick="AtivarDesativarFS()">
+            
         </div>
 
         <div class="menuEsq">
@@ -94,90 +25,47 @@
                 <br><br>
                 <h3><a href="https://fonts.google.com">ESTOQUE</a></h3>
                 <br><br>
-                <h3><a href="./contact.html">CONTATO Admin</a></h3>
+                <h3><a href="./contact.html" style="color: orange">CONTATO Admin</a></h3>
                 <br><br>
                 <h3><a href="./sobre.html">SOBRE</a></h3>
-                <h6>VERSÃO 13.22</h6>            
+                <h6>VERSÃO 1.0</h6>            
             </ol>
         </div>
 
-        <form id="formPrincipal">
-            <div class="conteudoPag">
-                    <div class="code">
-                            <h3>Código do Produto</h3>
-                            <input id="formulario" type="text" class="CodProd" name="CodProd">
-                    </div>
+        <br>
+        <div class="formCont">
+            <form id="formu">
+                <br>
+                <h2>Formulário de contato</h2>
+                <br>
+                <label for="formulario-nome" class="lab"><b>Nome</b></label><br>
+                <input type="text" id="contact" required>
+                <br><br>
 
-                    <div class="nome">
+                <label for="formulario-email" class="lab"><b>E-mail</b></label><br>
+                <input type="email" id="contact" required>
+                <br><br>
 
-                            <h3 id="nome">Nome</h3>
-                            <input id="formulario" type="text" class="Nome" name="Nome" >
-                    
-                    </div>
+                <label for="formulario-assunto" class="lab"><b>Assunto</b></label><br>
+                <input list="assunto" name="formulario-assunto" id="contact" type="text"/> 
+                <datalist id="assunto" class="lab" required>
 
-                    <div class="quantidade">        
-                            <h3 id="qua">Quantidade</h3>
-                            <input id="formulario" type="number" class="Quant" name="Quant">
+                    <option>Reportar Erro</option>
+                    <option>Deixar Sugestão</option>
+                    <option>Elogiar nosso serviço</option>
+                    <option>Outro</option>
+
+                </datalist> 
+                <br><br>
                 
-                    </div>
+                <label for="formulario-assunto" class="lab"><b>Descreva</b></label><br>
+                <textarea id="contact2" name="obs" placeholder="Texto(observações)" title="OBS" required></textarea>
+                <br><br><br> 
 
-            </div>
+                <input type="submit" value="Enviar" id="contact" name="enviar" class="enviaForm"> 
 
-         
-
-            <div class="conteudoPag2">
-                <div class="preco">
-                   
-                        <h3>Preço Unitário</h3>
-                        <input id="formulario" type="text" class="PrecoUnit" name="PrecoUnit" >
-                  
-                </div>
-
-                <div class="total">
-                  
-                        <h3 id="nome">Valor Total</h3>
-                        <input id="formulario" type="text" class="Total" name="Total" >
-               
-                </div>
-
-                <div class="btn">
-             
-                        <button type="reset" id="btn1">Limpar</button>
-                        
-                        <input type="button" value="Ingressar" id="btn2"/>
-                
-                </div>
-
-            </div>
-        </form>
-     
-        <div class="nota">
-            
-            <table id="tbPessoas" class="tbl">
-                <thead>
-                    <tr>
-                        <th id="tabela">CÓDIGO</th>
-                        <th id="tabela">NOME</th>
-                        <th id="tabela">QUANTIDADE</th>
-                        <th id="tabela">PREÇO</th>
-                        <th id="tabela">TOTAL</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                   
-                </tbody>
-
-            </table>
-        </div>
-
-        <div class="btn2">
-            <form>
-                <input type="submit" value="Pagar" id="btn3">   
-                <input type="button" value="Apagar" id="btn4" onclick="apaga()">
-                <input type="button" value="Cancelar" id="btn5">
             </form>
         </div>
 
-      
-    </div>
+    </body>
+</html>
